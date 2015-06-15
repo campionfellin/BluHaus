@@ -4,22 +4,42 @@
 
 	<head>
 		<title>BluHaus</title>
-		<!-- <script src="https://www.google.com/jsapi"></script>
+		<script src="https://www.google.com/jsapi"></script>
 		<script type="text/javascript">
-        google.load('search', '1');
-        google.setOnLoadCallback(function(){
-          new google.search.CustomSearchControl().draw('cse');
-        }, true);
-    	</script> -->
+       		google.load("search", "1", {style: google.loader.themes.ESPRESSO});
+	        google.setOnLoadCallback(function(){
+	          new google.search.CustomSearchControl().draw('cse');
+       		}, true);
+    	</script>
 		<script src="search.js"></script>
+		<link href="style.css" type="text/css" rel="stylesheet" />
+		<script src="https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.6zwg_pEP_2A.O/m=gapi_iframes,googleapis_client,iframes_styles_slide_menu,plusone/rt=j/sv=1/d=1/ed=1/am=AAQ/rs=AItRSTNy-00ELgURzlKy-V-78pEvv5BpHA/cb=gapi.loaded_0" async=""></script>
 
 	</head>
 
 	<body>
 
-		<!-- Try switching the attribute value to "true" or "false" -->
-		<gcse:searchbox></gcse:searchbox>
-		<gcse:searchresults defaultToImageSearch="true"></gcse:searchresults>
+		<div class="main">
+
+			<script>
+			  (function() {
+			    var cx = '006015581399931387497:iqygnixxamk';
+			    var gcse = document.createElement('script');
+			    gcse.type = 'text/javascript';
+			    gcse.async = true;
+			    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+			        '//cse.google.com/cse.js?cx=' + cx;
+			    var s = document.getElementsByTagName('script')[0];
+			    s.parentNode.insertBefore(gcse, s);
+			  })();
+			</script>
+			<gcse:search></gcse:search>
+
+			<!-- Try switching the attribute value to "true" or "false"
+			<gcse:searchbox enableAutoComplete="true"> </gcse:searchbox>
+			<gcse:searchresults defaultToImageSearch="false"></gcse:searchresults> -->
+
+		</div>
 
 	</body>
 
