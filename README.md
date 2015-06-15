@@ -1,2 +1,2 @@
 # BluHaus
-Designed and developed Campion Fellin and Robert Blatner
+Designed and developed by Campion Fellin and Robert Blatner
